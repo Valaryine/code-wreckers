@@ -22,6 +22,16 @@
  <link href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.3/jquery-jvectormap.js">
  <link  href="https://jvectormap.com/js/jquery-jvectormap-world-mill.js">
  <script src="js/main.js"></script>
+
+ <!-- Bootstrap -->
+ <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!-- Font Awesome -->
+ <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+ <!-- NProgress -->
+ <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+
+ <!-- Custom Theme Style -->
+ <link href="build/css/custom.min.css" rel="stylesheet">
 </head>
 <body>
 
@@ -40,7 +50,7 @@
           <li class="nav-item open">
              <span style="background-color: green;color:white">Overview</span>
              <ul class="subnav">
-                <li><a href="#">Monitor</a></li>
+                <li><a href="agents.html">Monitor</a></li>
                 <li><a href="#">Track</a></li>
                 <li><a href="#">Report</a></li>
                 <li><a href="#">Groups</a></li>
@@ -259,183 +269,193 @@
                                         <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=2048&amp;height=369&amp;hl=en&amp;q=uganda&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.bgmi.org/">BGMI</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:369px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:369px;}.gmap_iframe {height:369px!important;}</style></div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Area Chart<ul class="rad-panel-action">
-                                                                                    <li><i class="fa fa-chevron-down"></i></li>
-                                                                                    <li><i class="fa fa-rotate-right"></i></li>
-                                                                                    <li><i class="fa fa-cog"></i>
-                                                                                    <li><i class="fa fa-close"></i>
-                                                                                    </li>
-                                                                                </ul></h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div id="areaChart" class="rad-chart"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 col-md-6">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Area Chart<ul class="rad-panel-action">
-                                                                                    <li><i class="fa fa-chevron-down"></i></li>
-                                                                                    <li><i class="fa fa-rotate-right"></i></li>
-                                                                                    <li><i class="fa fa-cog"></i>
-                                                                                    <li><i class="fa fa-close"></i>
-                                                                                    </li>
-                                                                                </ul></h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div id="areaChart2" class="rad-chart"></div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-4 col-xs-12">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Activity<ul class="rad-panel-action">
-                                                                                    <li><i class="fa fa-chevron-down"></i></li>
-                                                                                    <li><i class="fa fa-rotate-right"></i></li>
-                                                                                    <li><i class="fa fa-close"></i>
-                                                                                    </li>
-                                                                                </ul></h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div class="rad-activity-body">
-                                                <div class="rad-list-group group">
-                                                    <div class="rad-list-group-item">
-                                                        <div class="rad-list-icon icon-shadow rad-bg-danger pull-left"><i class="fa fa-phone"></i></div>
-                                                        <div class="rad-list-content"><strong>Client meeting</strong>
-                                                            <div class="md-text">Meeting at 10:00 AM</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="rad-list-group-item">
-                                                        <div class="rad-list-icon icon-shadow rad-bg-primary pull-left"><i class="fa fa-refresh"></i></div>
-                                                        <div class="rad-list-content"><strong>Negotiation with a client</strong>
-                                                            <div class="md-text">Meetup at 2:00pm @Cask</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="rad-list-group-item">
-                                                        <div class="rad-list-icon icon-shadow rad-bg-success pull-left"><i class="fa fa-check"></i></div>
-                                                        <div class="rad-list-content"><strong>Activity completed</strong>
-                                                            <div class="md-text">Completed the 2 sales</div>
-                                                        </div>
-                                                    </div>
-                                                   
-                                                    <div class="rad-list-group-item">
-                                                        <div class="rad-list-icon icon-shadow rad-bg-success pull-left"><i class="fa fa-pencil"></i></div>
-                                                        <div class="rad-list-content"><strong>New post</strong>
-                                                            <div class="md-text">Created new post</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3 col-md-8 col-xs-12">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Donut Chart<ul class="rad-panel-action">
-                                                                                    <li><i class="fa fa-chevron-down"></i></li>
-                                                                                    <li><i class="fa fa-rotate-right"></i></li>
-                                                                                    <li><i class="fa fa-cog"></i>
-                                                                                    <li><i class="fa fa-close"></i>
-                                                                                    </li>
-                                                                                </ul></h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div id="donutChart" class="rad-chart"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12 col-xs-12">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Line Chart<ul class="rad-panel-action">
-                                                                                    <li><i class="fa fa-chevron-down"></i></li>
-                                                                                    <li><i class="fa fa-rotate-right"></i></li>
-                                                                                    <li><i class="fa fa-cog"></i>
-                                                                                    <li><i class="fa fa-close"></i>
-                                                                                    </li>
-                                                                                </ul></h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div id="lineChart" class="rad-chart"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-12">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Bar Chart<ul class="rad-panel-action">
-                                                                                    <li><i class="fa fa-chevron-down"></i></li>
-                                                                                    <li><i class="fa fa-rotate-right"></i></li>
-                                                                                    <li><i class="fa fa-cog"></i>
-                                                                                    <li><i class="fa fa-close"></i>
-                                                                                    </li>
-                                                                                </ul></h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div id="barChart3" class="rad-chart"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-6">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Bar Chart<ul class="rad-panel-action">
-                                                                                    <li><i class="fa fa-chevron-down"></i></li>
-                                                                                    <li><i class="fa fa-rotate-right"></i></li>
-                                                                                    <li><i class="fa fa-cog"></i>
-                                                                                    <li><i class="fa fa-close"></i>
-                                                                                    </li>
-                                                                                </ul></h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div id="barChart2" class="rad-chart"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 col-lg-6">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Bar Chart<ul class="rad-panel-action">
-                                                                                    <li><i class="fa fa-chevron-down"></i></li>
-                                                                                    <li><i class="fa fa-rotate-right"></i></li>
-                                                                                    <li><i class="fa fa-cog"></i>
-                                                                                    <li><i class="fa fa-close"></i>
-                                                                                    </li>
-                                                                                </ul></h3>
-                                            </div>
-                                            <div class="panel-body">
-                                                <div id="barChart" class="rad-chart"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-lg-4">
-                                        <div class="panel panel-default">
-                                            <div class="panel-heading">
-                                                <h3 class="panel-title">Chat<ul class="rad-panel-action">
-                                                                                    <li><i class="fa fa-chevron-down"></i></li>
-                                                                                    <li><i class="fa fa-close"></i>
-                                                                                    </li>
-                                                                                </ul></h3>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="right_col" role="main">
+                        <div class="">
+                          <div class="page-title">
+                            <div class="title_left">
+                              <h3>Graphical Statistics</h3>
+                            </div>
+              
+    
+              
+                          <div class="clearfix"></div>
+              
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6  ">
+                              <div class="x_panel">
+                                <div class="x_title">
+                                  <h2>Line graph<small>Sessions</small></h2>
+                                  <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Settings 1</a>
+                                          <a class="dropdown-item" href="#">Settings 2</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                  </ul>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                  <canvas id="lineChart"></canvas>
+                                </div>
+                              </div>
+                            </div>
+              
+                            <div class="col-md-6 col-sm-6  ">
+                              <div class="x_panel">
+                                <div class="x_title">
+                                  <h2>Bar graph <small>Sessions</small></h2>
+                                  <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Settings 1</a>
+                                          <a class="dropdown-item" href="#">Settings 2</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                  </ul>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                  <canvas id="mybarChart"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6  ">
+                              <div class="x_panel">
+                                <div class="x_title">
+                                  <h2>Radar <small>Sessions</small></h2>
+                                  <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Settings 1</a>
+                                          <a class="dropdown-item" href="#">Settings 2</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                  </ul>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                  <canvas id="canvasRadar"></canvas>
+                                </div>
+                              </div>
+                            </div>
+              
+                            <div class="col-md-6 col-sm-6  ">
+                              <div class="x_panel">
+                                <div class="x_title">
+                                  <h2>Donut Graph <small>Sessions</small></h2>
+                                  <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Settings 1</a>
+                                          <a class="dropdown-item" href="#">Settings 2</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                  </ul>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                  <canvas id="canvasDoughnut"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="clearfix"></div>
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6  ">
+                              <div class="x_panel">
+                                <div class="x_title">
+                                  <h2>Pie Graph Chart <small>Sessions</small></h2>
+                                  <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Settings 1</a>
+                                          <a class="dropdown-item" href="#">Settings 2</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                  </ul>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                  <canvas id="pieChart"></canvas>
+                                </div>
+                              </div>
+                            </div>
+              
+                            <div class="col-md-6 col-sm-6  ">
+                              <div class="x_panel">
+                                <div class="x_title">
+                                  <h2>Pie Area Graph <small>Sessions</small></h2>
+                                  <ul class="nav navbar-right panel_toolbox">
+                                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                                    </li>
+                                    <li class="dropdown">
+                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Settings 1</a>
+                                          <a class="dropdown-item" href="#">Settings 2</a>
+                                        </div>
+                                    </li>
+                                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                                    </li>
+                                  </ul>
+                                  <div class="clearfix"></div>
+                                </div>
+                                <div class="x_content">
+                                  <canvas id="polarArea"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </section>
                 </main>
-    
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+	
     </body>
     </html>
 
