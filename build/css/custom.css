@@ -2662,7 +2662,7 @@ a.star {
   width: 33px; }
 
 .list-btn-mail > .cn {
-  background: none repeat scroll 0 0 #39B3D7;
+  background: none repeat scroll 0 0 #06610b;
   border-radius: 12px;
   color: #FFFFFF;
   float: right;
@@ -3021,11 +3021,11 @@ a.btn-success, a.btn-primary, a.btn-warning, a.btn-danger {
   color: #fff; }
 
 .btn-success {
-  background: #26B99A;
-  border: 1px solid #169F85; }
+  background: #7cce04;
+  border: 1px solid #7cce04; }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open .dropdown-toggle.btn-success {
-  background: #169F85; }
+  background: #7cce04; }
 
 .btn-dark {
   color: #E9EDEF;
